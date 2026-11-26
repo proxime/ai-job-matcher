@@ -1,0 +1,156 @@
+import type { Offer } from "./types.ts";
+
+export const sampleContracts: Offer[] = [
+  {
+    id: "harborline-systems",
+    number: 14,
+    company: "Harborline Systems",
+    title: "Senior Front-end Engineer with React",
+    rate: "170–180 PLN/h",
+    workMode: "Remote",
+    source: "extension",
+    url: "https://example.com/jobs/senior-front-end-engineer-react",
+    rawText:
+      "Senior Front-end Engineer with React – fully remote or on-site. Strong React experience, complex web apps and SaaS, AI-assisted development tools (e.g. Claude Code)…",
+    status: "to-send",
+    notes: "Recruiter: ask who the end client is. Rate: aim for 180.",
+    createdAt: "2026-11-25",
+    analysis: {
+      score: 91,
+      recommendation: "apply",
+      rateVsMinimum: "above",
+      summary:
+        "Strong React and SaaS fit, the payout clears your minimum and AI tooling is a stated requirement. One learnable gap.",
+      strengths: [
+        "6+ years of React and TypeScript",
+        "SaaS with 15 microfrontends",
+        "Claude Code daily — required",
+      ],
+      gaps: ["No BPMN yet — willingness to learn accepted"],
+      prep: [
+        { text: "Learn BPMN 2.0 basics on demo.bpmn.io", done: false },
+        { text: "Prepare the ESG migration story", done: false },
+        { text: "Practice a 2-minute intro in English", done: false },
+      ],
+    },
+  },
+  {
+    id: "tidewater-software",
+    number: 13,
+    company: "Tidewater Software",
+    title: "Frontend Developer (React)",
+    rate: "120–150 PLN/h",
+    workMode: "Remote",
+    source: "paste",
+    status: "to-send",
+    createdAt: "2026-11-24",
+    analysis: {
+      score: 88,
+      recommendation: "apply",
+      rateVsMinimum: "within",
+      summary:
+        "Solid React match. The payout reaches your minimum only in the upper half of the range, so aim high.",
+      strengths: [
+        "React and TypeScript as the core stack",
+        "Experience with large enterprise front ends",
+      ],
+      gaps: ["The range starts below your minimum"],
+      prep: [
+        { text: "Prepare the case for 145–150 PLN/h", done: false },
+        { text: "Pick two enterprise projects to walk through", done: false },
+      ],
+    },
+  },
+  {
+    id: "saltgrid",
+    number: 9,
+    company: "Saltgrid",
+    title: "Senior Frontend Engineer",
+    rate: "16–25k PLN/mo",
+    workMode: "Remote",
+    source: "url",
+    status: "rejected",
+    createdAt: "2026-11-12",
+    analysis: {
+      score: 80,
+      recommendation: "apply",
+      rateVsMinimum: "within",
+      summary:
+        "Good technical fit for a data-heavy product. The monthly range clears your minimum only near the top.",
+      strengths: [
+        "Senior-level React and TypeScript",
+        "Comfortable with complex, data-heavy interfaces",
+      ],
+      gaps: ["No networking domain experience", "Monthly rate instead of hourly"],
+      prep: [
+        { text: "Convert the monthly range to an hourly rate", done: true },
+        { text: "Read about the product's network automation basics", done: false },
+      ],
+    },
+  },
+  {
+    id: "kestrel-technology",
+    number: 11,
+    company: "Kestrel Technology",
+    title: "Senior Frontend Engineer",
+    rate: "120–150 PLN/h",
+    workMode: "Remote",
+    source: "url",
+    status: "sent",
+    createdAt: "2026-11-18",
+    analysis: {
+      score: 76,
+      recommendation: "apply",
+      rateVsMinimum: "within",
+      summary:
+        "The stack matches and the team is remote-first. One nice-to-have is missing and the range starts low.",
+      strengths: ["React, TypeScript and Next.js all match", "Remote-first team"],
+      gaps: ["Asks for React Native exposure"],
+      prep: [
+        { text: "Prepare a Next.js performance example", done: false },
+        { text: "Skim the React Native basics", done: false },
+      ],
+    },
+  },
+  {
+    id: "marlin-labs",
+    number: 12,
+    company: "Marlin Labs",
+    title: "Senior Frontend Engineer (FinTech)",
+    rate: "up to 140 PLN/h",
+    workMode: "Remote",
+    source: "extension",
+    status: "to-send",
+    createdAt: "2026-11-21",
+    analysis: {
+      score: 64,
+      recommendation: "quick-shot",
+      rateVsMinimum: "within",
+      summary:
+        "The core stack fits, but FinTech experience is required and the payout tops out close to your minimum.",
+      strengths: ["Core React stack matches"],
+      gaps: ["FinTech domain experience is required", "Payout tops out near your minimum"],
+      prep: [{ text: "Collect any payments or banking work to mention", done: false }],
+    },
+  },
+  {
+    id: "pierside-retail",
+    number: 10,
+    company: "Pierside Retail",
+    title: "Fullstack Developer (React + Java)",
+    workMode: "Remote",
+    source: "paste",
+    status: "sent",
+    createdAt: "2026-11-14",
+    analysis: {
+      score: 55,
+      recommendation: "quick-shot",
+      rateVsMinimum: "unknown",
+      summary:
+        "You cover the React half of the role well. The Java back end is the other half, and the ad gives no rate.",
+      strengths: ["Strong on the React half of the role"],
+      gaps: ["Java back end is half of the job", "No rate range in the ad"],
+      prep: [{ text: "Ask for the rate range before investing time", done: false }],
+    },
+  },
+];

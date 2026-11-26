@@ -58,6 +58,11 @@
     0 0 22px color-mix(in srgb, var(--jc-amber) 30%, transparent),
     0 0 64px color-mix(in srgb, var(--jc-amber) 14%, transparent);
 
+  --jc-glow-lavender-border: color-mix(in srgb, var(--jc-lavender) 55%, transparent);
+  --jc-glow-lavender: 0 0 0 1px color-mix(in srgb, var(--jc-lavender) 12%, transparent),
+    0 0 22px color-mix(in srgb, var(--jc-lavender) 30%, transparent),
+    0 0 64px color-mix(in srgb, var(--jc-lavender) 14%, transparent);
+
   /* Lighter highlight for the selected list item. */
   --jc-glow-selected-border: color-mix(in srgb, var(--jc-pink) 60%, transparent);
   --jc-glow-selected: 0 0 22px color-mix(in srgb, var(--jc-pink) 25%, transparent);

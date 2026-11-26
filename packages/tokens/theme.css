@@ -36,6 +36,7 @@
   --color-jc-glow-pink: var(--jc-glow-pink-border);
   --color-jc-glow-teal: var(--jc-glow-teal-border);
   --color-jc-glow-amber: var(--jc-glow-amber-border);
+  --color-jc-glow-lavender: var(--jc-glow-lavender-border);
   --color-jc-glow-selected: var(--jc-glow-selected-border);
 
   /* Typography: font-display, font-body */
@@ -52,6 +53,7 @@
   --shadow-glow-pink: var(--jc-glow-pink);
   --shadow-glow-teal: var(--jc-glow-teal);
   --shadow-glow-amber: var(--jc-glow-amber);
+  --shadow-glow-lavender: var(--jc-glow-lavender);
   --shadow-glow-selected: var(--jc-glow-selected);
   --shadow-glow-cta: var(--jc-glow-cta);
   --text-shadow-glow-score: var(--jc-glow-score);
