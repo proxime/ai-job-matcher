@@ -2,7 +2,6 @@ import { ApiError } from "../../lib/api-error.ts";
 import { fakeDelay } from "../../lib/fake-delay.ts";
 import type { OfferDraft } from "../contracts/types.ts";
 
-export const MAX_OFFER_TEXT_LENGTH = 20_000;
 const MIN_OFFER_TEXT_LENGTH = 200;
 
 export type AnalyzeRequest =

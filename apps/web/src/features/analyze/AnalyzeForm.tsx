@@ -1,11 +1,11 @@
 import { zodResolver } from "@hookform/resolvers/zod";
+import { MAX_OFFER_TEXT_LENGTH } from "@jm/shared";
 import clsx from "clsx";
 import { useId, useRef, type KeyboardEvent } from "react";
 import { useForm, useWatch } from "react-hook-form";
 import { Field } from "../../ui/Field.tsx";
 import { fieldAria } from "../../ui/field-aria.ts";
 import { button, input } from "../../ui/styles.ts";
-import { MAX_OFFER_TEXT_LENGTH } from "./api.ts";
 import {
   analyzeFormSchema,
   type AnalyzeFormValues,

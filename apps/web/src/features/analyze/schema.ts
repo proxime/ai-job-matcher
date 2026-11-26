@@ -1,5 +1,5 @@
+import { MAX_OFFER_TEXT_LENGTH } from "@jm/shared";
 import { z } from "zod";
-import { MAX_OFFER_TEXT_LENGTH } from "./api.ts";
 
 const offerLink = z
   .string()
