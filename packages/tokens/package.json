@@ -1,0 +1,9 @@
+{
+  "name": "@jm/tokens",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Neon Coast design tokens (CSS custom properties) shared by the web app and the extension",
+  "exports": {
+    "./tokens.css": "./tokens.css"
+  }
+}

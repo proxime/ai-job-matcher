@@ -1,0 +1,68 @@
+/* Neon Coast design tokens.
+   Shared by apps/web and apps/extension: import "@jm/tokens/tokens.css" once, at the app entry. */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  /* Backgrounds and surfaces */
+  --jc-bg: #140b2e; /* app background */
+  --jc-bg-deep: #0c0720; /* darkest background, e.g. behind the extension panel */
+  --jc-surface: #1d1142; /* cards, panels, inputs */
+  --jc-surface-active: #24164f; /* selected list item, active button */
+  --jc-line: #2e1d5c; /* dividers */
+  --jc-border: #4a3585; /* borders of inputs and secondary buttons */
+
+  /* Text */
+  --jc-text: #f6f0ff; /* primary */
+  --jc-text-body: #e6ddf8; /* longer copy, lists */
+  --jc-text-muted: #cfc2ee; /* labels, descriptions, secondary */
+
+  /* Accents */
+  --jc-pink: #ff5fa2; /* match score, primary CTA (text on it: --jc-bg) */
+  --jc-pink-soft: #ff7db4; /* risks, links, status Rejected */
+  --jc-pink-hover: #ffb3d3; /* link hover */
+  --jc-teal: #2ee6d6; /* "Your edge", status Sent, "COAST" in the logo */
+  --jc-amber: #ffb547; /* status To send, recommendation badge, "Next move" */
+  --jc-lavender: #b79cff; /* status Interviews */
+  --jc-green: #7fe3a0; /* status Offer */
+  --jc-grey: #8e82b0; /* status No reply */
+
+  /* Typography */
+  --jc-font-display: "Anton", sans-serif; /* titles, numbers, logo */
+  --jc-font-body: "Rubik", system-ui, sans-serif;
+
+  /* Radii */
+  --jc-radius-sm: 10px;
+  --jc-radius: 12px; /* buttons, inputs */
+  --jc-radius-md: 14px; /* list items */
+  --jc-radius-lg: 18px; /* panels, cards */
+  --jc-radius-pill: 999px; /* chips, badges */
+
+  /* Glows — the highlight in Neon Coast is a neon glow, never a coloured bar on top of a card.
+     color-mix(in srgb, <colour> N%, transparent) is the same colour at N% opacity,
+     so every glow stays tied to its accent token. */
+
+  /* Full highlight for a panel or card: pair the border with the matching box-shadow. */
+  --jc-glow-pink-border: color-mix(in srgb, var(--jc-pink) 55%, transparent);
+  --jc-glow-pink: 0 0 0 1px color-mix(in srgb, var(--jc-pink) 12%, transparent),
+    0 0 22px color-mix(in srgb, var(--jc-pink) 30%, transparent),
+    0 0 64px color-mix(in srgb, var(--jc-pink) 14%, transparent);
+
+  --jc-glow-teal-border: color-mix(in srgb, var(--jc-teal) 55%, transparent);
+  --jc-glow-teal: 0 0 0 1px color-mix(in srgb, var(--jc-teal) 12%, transparent),
+    0 0 22px color-mix(in srgb, var(--jc-teal) 30%, transparent),
+    0 0 64px color-mix(in srgb, var(--jc-teal) 14%, transparent);
+
+  --jc-glow-amber-border: color-mix(in srgb, var(--jc-amber) 55%, transparent);
+  --jc-glow-amber: 0 0 0 1px color-mix(in srgb, var(--jc-amber) 12%, transparent),
+    0 0 22px color-mix(in srgb, var(--jc-amber) 30%, transparent),
+    0 0 64px color-mix(in srgb, var(--jc-amber) 14%, transparent);
+
+  /* Lighter highlight for the selected list item. */
+  --jc-glow-selected-border: color-mix(in srgb, var(--jc-pink) 60%, transparent);
+  --jc-glow-selected: 0 0 22px color-mix(in srgb, var(--jc-pink) 25%, transparent);
+
+  /* Primary CTA (box-shadow) and the match score (text-shadow). */
+  --jc-glow-cta: 0 0 18px color-mix(in srgb, var(--jc-pink) 40%, transparent);
+  --jc-glow-score: 0 0 24px color-mix(in srgb, var(--jc-pink) 50%, transparent);
+}
