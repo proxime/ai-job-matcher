@@ -1,0 +1,58 @@
+/* Tailwind CSS v4 theme for Neon Coast.
+   Maps the --jc-* tokens from tokens.css to Tailwind utilities, e.g. --color-jc-surface -> bg-jc-surface.
+   Import it right after "tailwindcss" in the app's CSS entry; tokens.css must be loaded as well.
+
+   "inline" makes utilities reference the token directly (background-color: var(--jc-surface)),
+   so tokens.css stays the single source of truth for the values. */
+
+@theme inline {
+  /* Drop Tailwind's default palette: only Neon Coast colours are available. */
+  --color-*: initial;
+
+  /* Backgrounds and surfaces */
+  --color-jc-bg: var(--jc-bg);
+  --color-jc-bg-deep: var(--jc-bg-deep);
+  --color-jc-surface: var(--jc-surface);
+  --color-jc-surface-active: var(--jc-surface-active);
+  --color-jc-line: var(--jc-line);
+  --color-jc-border: var(--jc-border);
+
+  /* Text */
+  --color-jc-text: var(--jc-text);
+  --color-jc-text-body: var(--jc-text-body);
+  --color-jc-text-muted: var(--jc-text-muted);
+
+  /* Accents */
+  --color-jc-pink: var(--jc-pink);
+  --color-jc-pink-soft: var(--jc-pink-soft);
+  --color-jc-pink-hover: var(--jc-pink-hover);
+  --color-jc-teal: var(--jc-teal);
+  --color-jc-amber: var(--jc-amber);
+  --color-jc-lavender: var(--jc-lavender);
+  --color-jc-green: var(--jc-green);
+  --color-jc-grey: var(--jc-grey);
+
+  /* Glow borders: border-jc-glow-pink etc., paired with the shadow-glow-* utilities below. */
+  --color-jc-glow-pink: var(--jc-glow-pink-border);
+  --color-jc-glow-teal: var(--jc-glow-teal-border);
+  --color-jc-glow-amber: var(--jc-glow-amber-border);
+  --color-jc-glow-selected: var(--jc-glow-selected-border);
+
+  /* Typography: font-display, font-body */
+  --font-display: var(--jc-font-display);
+  --font-body: var(--jc-font-body);
+
+  /* Radii: rounded-jc-sm, rounded-jc, rounded-jc-md, rounded-jc-lg (pill = Tailwind's rounded-full) */
+  --radius-jc-sm: var(--jc-radius-sm);
+  --radius-jc: var(--jc-radius);
+  --radius-jc-md: var(--jc-radius-md);
+  --radius-jc-lg: var(--jc-radius-lg);
+
+  /* Glows: shadow-glow-pink, shadow-glow-selected, shadow-glow-cta, text-shadow-glow-score */
+  --shadow-glow-pink: var(--jc-glow-pink);
+  --shadow-glow-teal: var(--jc-glow-teal);
+  --shadow-glow-amber: var(--jc-glow-amber);
+  --shadow-glow-selected: var(--jc-glow-selected);
+  --shadow-glow-cta: var(--jc-glow-cta);
+  --text-shadow-glow-score: var(--jc-glow-score);
+}
